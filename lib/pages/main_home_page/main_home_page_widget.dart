@@ -989,109 +989,100 @@ class _MainHomePageWidgetState extends State<MainHomePageWidget>
                                         ],
                                       ),
                                     ),
-                                    if (responsiveVisibility(
-                                      context: context,
-                                      tablet: false,
-                                      tabletLandscape: false,
-                                      desktop: false,
-                                    ))
-                                      SingleChildScrollView(
-                                        scrollDirection: Axis.horizontal,
-                                        child: Row(
-                                          mainAxisSize: MainAxisSize.max,
-                                          children: [
-                                            Align(
-                                              alignment: const AlignmentDirectional(
-                                                  -1.00, 0.00),
-                                              child: Padding(
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        0.0, 8.0, 8.0, 8.0),
-                                                child: FlutterFlowChoiceChips(
-                                                  options: const [
-                                                    ChipData('Electronics'),
-                                                    ChipData('Shoes'),
-                                                    ChipData('Sports'),
-                                                    ChipData('Home'),
-                                                    ChipData(
-                                                        'Health and Personal Care'),
-                                                    ChipData(
-                                                        'Clothing and Accessories'),
-                                                    ChipData('Grocery')
-                                                  ],
-                                                  onChanged: (val) => setState(
-                                                      () => _model
-                                                              .choiceChipsValues =
-                                                          val),
-                                                  selectedChipStyle: ChipStyle(
-                                                    backgroundColor:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .accent1,
-                                                    textStyle:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .bodyMedium,
-                                                    iconColor:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .info,
-                                                    iconSize: 18.0,
-                                                    elevation: 4.0,
-                                                    borderColor:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .primary,
-                                                    borderWidth: 2.0,
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            8.0),
-                                                  ),
-                                                  unselectedChipStyle:
-                                                      ChipStyle(
-                                                    backgroundColor:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .primaryBackground,
-                                                    textStyle:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .labelMedium,
-                                                    iconColor:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .primaryText,
-                                                    iconSize: 18.0,
-                                                    elevation: 0.0,
-                                                    borderColor:
-                                                        FlutterFlowTheme.of(
-                                                                context)
-                                                            .alternate,
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                            8.0),
-                                                  ),
-                                                  chipSpacing: 8.0,
-                                                  rowSpacing: 12.0,
-                                                  multiselect: true,
-                                                  initialized: _model
-                                                          .choiceChipsValues !=
-                                                      null,
-                                                  alignment:
-                                                      WrapAlignment.start,
-                                                  controller: _model
-                                                          .choiceChipsValueController ??=
-                                                      FormFieldController<
-                                                          List<String>>(
-                                                    ['Electronics'],
-                                                  ),
-                                                  wrapped: true,
+                                    SingleChildScrollView(
+                                      scrollDirection: Axis.horizontal,
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.max,
+                                        children: [
+                                          Align(
+                                            alignment: const AlignmentDirectional(
+                                                -1.00, 0.00),
+                                            child: Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(0.0, 8.0, 8.0, 8.0),
+                                              child: FlutterFlowChoiceChips(
+                                                options: const [
+                                                  ChipData('Electronics'),
+                                                  ChipData('Shoes'),
+                                                  ChipData('Sports'),
+                                                  ChipData('Home'),
+                                                  ChipData(
+                                                      'Health and Personal Care'),
+                                                  ChipData(
+                                                      'Clothing and Accessories'),
+                                                  ChipData('Grocery')
+                                                ],
+                                                onChanged: (val) => setState(
+                                                    () => _model
+                                                            .choiceChipsValues =
+                                                        val),
+                                                selectedChipStyle: ChipStyle(
+                                                  backgroundColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .accent1,
+                                                  textStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .bodyMedium,
+                                                  iconColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .info,
+                                                  iconSize: 18.0,
+                                                  elevation: 4.0,
+                                                  borderColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .primary,
+                                                  borderWidth: 2.0,
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          8.0),
                                                 ),
+                                                unselectedChipStyle: ChipStyle(
+                                                  backgroundColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .primaryBackground,
+                                                  textStyle:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .labelMedium,
+                                                  iconColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .primaryText,
+                                                  iconSize: 18.0,
+                                                  elevation: 0.0,
+                                                  borderColor:
+                                                      FlutterFlowTheme.of(
+                                                              context)
+                                                          .alternate,
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                          8.0),
+                                                ),
+                                                chipSpacing: 8.0,
+                                                rowSpacing: 12.0,
+                                                multiselect: true,
+                                                initialized:
+                                                    _model.choiceChipsValues !=
+                                                        null,
+                                                alignment: WrapAlignment.start,
+                                                controller: _model
+                                                        .choiceChipsValueController ??=
+                                                    FormFieldController<
+                                                        List<String>>(
+                                                  ['Electronics'],
+                                                ),
+                                                wrapped: true,
                                               ),
                                             ),
-                                          ],
-                                        ),
+                                          ),
+                                        ],
                                       ),
+                                    ),
 
                                     // This list is queried, if you change it to infinite scroll you may miss out on the "real time" updates of the favorited list.
                                     if (responsiveVisibility(

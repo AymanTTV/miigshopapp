@@ -497,7 +497,7 @@ class _TopNavWidgetState extends State<TopNavWidget>
                                     child: Image.network(
                                       valueOrDefault<String>(
                                         currentUserPhoto,
-                                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/f-f-enterprise-e-comm-2v20bm/assets/2lkbm5mpxeuc/favicon@2x.png',
+                                        'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/miig-shop-baaib4/assets/kkxsjr7vp80c/Miig.png',
                                       ),
                                       width: 60.0,
                                       height: 60.0,

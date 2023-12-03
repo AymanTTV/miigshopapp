@@ -372,12 +372,9 @@ class FFRoute {
           final child = appStateNotifier.loading
               ? Container(
                   color: Colors.transparent,
-                  child: Center(
-                    child: Image.asset(
-                      'assets/images/MiigShop.png',
-                      width: 400.0,
-                      fit: BoxFit.cover,
-                    ),
+                  child: Image.asset(
+                    'assets/images/Miig_Shop_app_view_(1).png',
+                    fit: BoxFit.cover,
                   ),
                 )
               : page;
