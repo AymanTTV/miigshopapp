@@ -1,7 +1,6 @@
-# MiigShop
+Miig Shope -  E-Commerce app
 
-A new Flutter project.
+![Miig Shop Social Image](https://github.com/AymanTTV/miigshopapp/assets/89187064/8007088d-57b4-4573-809b-f4e195246a28)
 
-## Getting Started
 
-FlutterFlow projects are built to run on the Flutter _stable_ release.
+powerful E-Commerce applications with a great User Interface.
